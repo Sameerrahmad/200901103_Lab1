@@ -1,0 +1,12 @@
+#TASK 01
+from collections import deque
+stack=deque()
+string=input("Enter String :")
+for ch in string:
+  stack.append(ch)
+while (len(stack)!=0):
+ print(stack.pop())
+if (string==string[::-1]):
+    print('The string is a palindrome.')
+else:
+    print('The string is not a palindrome.')
